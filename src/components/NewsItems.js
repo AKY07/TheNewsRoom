@@ -2,13 +2,21 @@ import React, { Component } from "react";
 
 export class NewsItems extends Component {
   render() {
-    let { title, description, imageUrl, newsUrl, author, date ,source} = this.props;
+    let { title, description, imageUrl, newsUrl, author, date, source } =
+      this.props;
     return (
       <div className="my-3">
         <div className="card">
-        <span class="position-absolute top-0  translate-middle badge rounded-pill bg-danger" style={{left:"91%", zIndex:"1"}}>
-                {source}
-              </span>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "flex-end",
+              position: "absolute",
+              right: "0",
+            }}
+          >
+            <span class=" badge rounded-pill bg-danger">{source}</span>
+          </div>
           <img
             src={
               !imageUrl
@@ -19,10 +27,7 @@ export class NewsItems extends Component {
             alt="..."
           />
           <div className="card-body">
-            <h5 className="card-title">
-              {title}...
-             
-            </h5>
+            <h5 className="card-title">{title}...</h5>
             <p className="card-text">{description}...</p>
             <p className="card-text">
               <small className="text-body-secondary">
