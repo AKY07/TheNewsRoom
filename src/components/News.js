@@ -477,7 +477,7 @@ export class News extends Component {
   render() {
     return (
       <div className="container my-3">
-        <h1 className="text-center" style={{ margin: "35px 0px" }}>
+        <h1 className="text-center " style={{ margin: "35px 0px", marginTop:"90px" }}>
         The NEWS ROOM - Top {this.capitaizeFirstLetter(this.props.category)}{" "}Headlines
         </h1>
         {this.state.loading && <Spinner />}
@@ -487,7 +487,7 @@ export class News extends Component {
               return (
                 <div className="col-md-4" key={element.url}>
                   <NewsItems
-                    title={element.title ? element.title.slice(0, 45) : ""}
+                    title={element.title ? element.title.slice(0, 70) : ""}
                     description={
                       element.description
                         ? element.description.slice(0, 88)

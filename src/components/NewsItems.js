@@ -15,7 +15,7 @@ export class NewsItems extends Component {
               right: "0",
             }}
           >
-            <span class=" badge rounded-pill bg-danger">{source}</span>
+            <span className=" badge rounded-pill bg-danger">{source}</span>
           </div>
           <img
             src={
