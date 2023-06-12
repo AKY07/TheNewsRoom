@@ -52,3 +52,5 @@ export class NewsItems extends Component {
 }
 
 export default NewsItems;
+
+
